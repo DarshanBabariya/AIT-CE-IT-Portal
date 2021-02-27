@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #000;
+    background-color: #fff;
+    font-size: 20px;
+}
+p {
+    font-family: 'Oxygen', sans-serif;
+}
+.heading_style {
+    font-family: 'Vollkorn', serif;
+}
+/* brand-name */
+.brand-name{
+    background-color:#272833;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+#logo{
+    width: 137px;
+    height: 126px;
+    padding: 10px;
+    top: 0;
+    left: 0;
+}
+#ait-title {
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+#ait-title a h1{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #FF0000;
+    text-align:center;
+    letter-spacing: .5px;
+    color: #FFF;
+}
+
+#ait-title a:hover{
+    text-decoration: none;
+}
+#ait-title h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px yellow;
+}
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    background-color: #F9813A;
+}
+.navbar-brand {
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #000;
+}
+.navbar-brand h4{
+    font-size: 25px;
+}
+.navbar-nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.nav-item a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000;    
+}
+.nav-item:hover{
+    background-color: #272833;
+    transition: .5s;
+    border-radius: 2px;
+}
+.dropdown-menu{
+    background-color: #272833;
+    text-align: center;
+}
+.dropdown-menu a:hover {
+    background-color: #F9813A;
+    transition: .5s;
+
+}
+.mob-nav {
+    cursor: pointer;
+    display: none;
+}
+.mob-nav div{
+    width: 25px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 5px;
+}
+/* top-info */
+
+/** ABOUT **/
+#about-us {
+	background-color:  #FFD5CD ;
+	padding-bottom: 50px;
+    margin-top: 10px;
+}
+#about {
+	margin-top: 50px;
+	color: #272833;
+}
+#about-head h3 {
+	font-size: 1.8em;
+    font-weight: 600;
+	text-transform: uppercase;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	color: #CC0000;
+}
+#about-head h4 {
+	font-size: 1.3em;
+	text-transform: capitalize;
+	margin: 10px;
+	font-weight: 550;
+    color: #272833;
+}
+#about-head h5 {
+	font-size: 1.1em;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	margin: 10px;
+    color: #272833;
+
+}
+#about-tile p {
+	font-size: 18px;
+	margin: 20px;
+	text-align: justify;
+}
+#about-tile img {
+    width: 90%;
+    height: 90%;
+}
+/* wave */
+.custom-shape-divider-top-1614377907 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1614377907 svg {
+    position: relative;
+    display: block;
+    width: calc(142% + 1.3px);
+    height: 130px;
+}
+.custom-shape-divider-top-1614377907 .shape-fill {
+    fill: #FFD5CD;
+}
+
+/* vission & mission */
+#vis_mis {
+    background-color: #FFF;
+    padding-bottom: 50px;
+}
+#vis_mis-head h3{
+    font-size: 1.8em;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	color: #CC0000;
+}
+.depart {
+    background-color: #FFD5CD;
+}
+.depart h3{
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #CC0000;
+    padding: 20px;
+}
+
+.vission{
+    border-bottom: 2px solid #FFF;
+    margin: 10px;
+
+}
+.vission h4{
+    font-size: 1.5em;
+    margin: 20px;
+    color: #FF0000;
+    text-align: center;
+    text-transform: uppercase;
+}
+.vission-tile p {
+    font-size: 20px;
+    text-align: center;
+    color: #272833;
+}
+.mission{
+    border-bottom: 2px solid #FFF;
+    margin: 10px;
+}
+.mission h4{
+    font-size: 1.5em;
+    margin: 20px;
+    color: #FF0000;
+    text-align: center;
+    text-transform: uppercase;
+}
+.mission-tile {
+    border-right: 2px solid #FFF;
+    overflow: hidden;
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+}
+.mission-tile i {
+    font-size: 30px;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    color: #272833;
+}
+.mission-tile p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #272833;
+    padding: 10px;
+}
+
+
+
+/*****		EXTRA LARGE DEVICE ONLY			*****/
+@media (min-width: 1200px) {
+    
+}
+
+/*****		LARGE DEVICE ONLY			*****/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* brand-name */
+    #logo{
+        width: 117px;
+        height: 110px;
+        padding: 10px;
+    }
+    #ait-title a h1{
+        font-size: 1.6em;
+    }
+    #ait-title h3{
+        font-size: 18px;
+    }
+    /* navbar */
+    .navbar-brand h4{
+        font-size: 22px;
+    }
+    .nav-item a{
+        font-size: 19px;
+    }
+
+    /* about */
+    #about-head h3 {
+		font-size: 1.6em;
+	}
+	#about-head h4 {
+		font-size: 1.5em;
+	}
+	#about-head h5 {
+		font-size: 1.1em;
+	}
+	#about-tile p {
+		font-size: 16px;
+	}
+	/* wavw */
+    .custom-shape-divider-top-1614377907 svg {
+        width: calc(148% + 1.3px);
+        height: 99px;
+    }
+    /* vission & mission */
+    
+    #vis_mis-head h3{
+        font-size: 1.8em;
+    }
+    .depart h3{
+        font-size: 1.7em;
+    }
+    .vission h4{
+        font-size: 1.5em;
+    }
+    .vission-tile p {
+        font-size: 18px;
+    }
+    .mission h4{
+        font-size: 1.5em;
+    }
+    .mission-tile i {
+        font-size: 28px;
+    }
+    .mission-tile p{
+        font-size: 18px;
+    }
+    
+}
+
+/*****		MEDIUM DEVICE ONLY			*****/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* brand-name */
+    #logo{
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+    #ait-title a h1{
+        font-size: 1.15em;
+    }
+    #ait-title h3{
+        font-size: 15px;
+    }
+    /* navbar */
+    .navbar-brand h4{
+        font-size: 20px;
+    }
+    .navbar-nav {
+        position: absolute;
+        right: 0;
+        width: 0;
+        top: 7vh;
+        background-color: #F9813A;
+        transition: .5s;
+        z-index: 1;
+        overflow: hidden;
+        /* transform: translateX(100%); */
+    }
+    .navbar-nav li{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;       
+    }
+    .mob-nav {
+        display: block;
+    }
+
+    /* about */
+    #about {
+		margin-top: 50px;
+	}
+	#about-head h3 {
+		font-size: 1.6em;
+	}
+	#about-head h4 {
+		font-size: 1.3em;
+	}
+	#about-head h5 {
+		font-size: 1.1em;
+	}
+	#about-tile p {
+		font-size: 18px;
+	}
+	#about-tile img {
+		margin: 25px;
+	}
+    /* wavw */
+    .custom-shape-divider-top-1614377907 svg {
+        width: calc(148% + 1.3px);
+        height: 99px;
+    }
+
+    /* vission & mission */
+    
+    #vis_mis-head h3{
+        font-size: 1.6em;
+    }
+    .depart h3{
+        font-size: 1.5em;
+    }
+    .vission h4{
+        font-size: 1.3em;
+    }
+    .vission-tile p {
+        font-size: 18px;
+    }
+    .mission h4{
+        font-size: 1.3em;
+    }
+    
+    .mission-tile i {
+        font-size: 28px;
+        margin-top: 20px;
+
+    }
+    .mission-tile p{
+        font-size: 18px;
+    }
+}
+/*****		SMALL DEVICE ONLY		*****/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* brand-name */
+    #logo{
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    #ait-title a h1{
+        font-size: .8em;
+    }
+    #ait-title h3{
+        font-size: 15px;
+    }
+    /* navbar */
+    .navbar-brand h4{
+        font-size: 20px;
+    }
+    .navbar-nav {
+        position: absolute;
+        right: 0;
+        width: 0;
+        top: 7vh;
+        background-color: #F9813A;
+        transition: .5s;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .navbar-nav li{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;       
+    }
+    .mob-nav {
+        display: block;
+    }
+
+    /* about */
+    #about {
+		margin-top: 50px;
+	}
+	#about-head h3 {
+		font-size: 1.4em;
+	}
+	#about-head h4 {
+		font-size: 1.2em;
+	}
+	#about-head h5 {
+		font-size: 1em;
+	}
+	#about-tile p {
+		font-size: 16px;
+	}
+	#about-tile img {
+		margin: 25px;
+	}
+    /* wave */
+    .custom-shape-divider-top-1614377907 svg {
+        width: calc(142% + 1.3px);
+        height: 93px;
+    }
+
+    /* vission & mission */
+    
+    #vis_mis-head h3{
+        font-size: 1.4em;
+    }
+    .depart h3{
+        font-size: 1.3em;
+    }
+    .vission h4{
+        font-size: 1.3em;
+    }
+    .vission-tile p {
+        font-size: 16px;
+    }
+    .mission-tile {
+        border-right: none;
+        border-bottom: 2px solid #FFF;
+    }
+    .mission h4{
+        font-size: 1.3em;
+    }
+    .mission-tile i {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .mission-tile p{
+        font-size: 16px;
+
+    }
+}
+
+/*****		EXTRA SUPER SMALL DEVICE ONLY		*****/
+@media (max-width: 575.98px) {
+    /* brand-name */
+    #logo{
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    #ait-title a h1{
+        font-size: .6em;
+    }
+    #ait-title h3{
+        font-size: 10px;
+    }
+    /* navbar */
+    .navbar-brand h4{
+        font-size: 20px;
+    }
+    .navbar-nav {
+        position: absolute;
+        right: 0;
+        width: 0;
+        top: 7vh;
+        background-color: #F9813A;
+        transition: .5s;
+        z-index: 1;
+        overflow: hidden;
+        /* transform: translateX(100%); */
+    }
+    .navbar-nav li{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;       
+    }
+    .mob-nav {
+        display: block;
+    }
+    /* about */
+    #about {
+		margin-top: 50px;
+	}
+	#about-head h3 {
+		font-size: 1.3em;
+	}
+	#about-head h4 {
+		font-size: 1em;
+	}
+	#about-head h5 {
+		font-size: .9em;
+	}
+	#about-tile p {
+		font-size: 16px;
+	}
+	#about-tile img {
+		margin: 25px;
+	}
+    /* wave */
+    .custom-shape-divider-top-1614377907 svg {
+        width: calc(142% + 1.3px);
+        height: 93px;
+    }
+
+    /* vission & mission */
+    
+    #vis_mis-head h3{
+        font-size: 1.3em;
+    }
+    .depart h3{
+        font-size: 1.2em;
+    }
+    .vission h4{
+        font-size: 1.2em;
+    }
+    .vission-tile p {
+        font-size: 16px;
+    }
+    .mission-tile {
+        border-right: none;
+        border-bottom: 2px solid #FFF;
+    }
+    .mission h4{
+        font-size: 1.2em;
+    }
+    .mission-tile i {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .mission-tile p{
+        font-size: 16px;
+
+    }
+
+}

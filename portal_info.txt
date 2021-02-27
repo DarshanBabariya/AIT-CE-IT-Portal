@@ -1,0 +1,5 @@
+bootstrap : https://getbootstrap.com/docs/4.0/getting-started/introduction/
+color code : https://colorhunt.co/palette/212613
+font : https://fonts.google.com/specimen/Libre+Baskerville?preview.text=AHMEDABAD%20INSTITUTEOF%20TECHNOLOGY&preview.text_type=custom&sidebar.open=true&selection.family=Libre+Baskerville:wght@400;700#standard-styles
+
+

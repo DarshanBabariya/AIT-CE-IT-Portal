@@ -1,0 +1,12 @@
+Home -> About  , Vision & Misson , Circular(Notice Board)
+Semester -> Subjects -> Details about sub.
+MSE -> Schedule , result
+Gallary -> Workshop / Events / Club 
+	Online Courses -> Coursera & Naptel
+Faculty -> Details of Faculty /faculty contect
+Contect US -> Mail 
+
+
+Home page -> title / about / vision & misson
+
+		
