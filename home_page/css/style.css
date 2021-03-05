@@ -58,7 +58,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #F9813A;
+    background-color: #CC0000;
 }
 .navbar-brand {
     color: #FFF;
@@ -81,6 +81,9 @@ body {
     font-size: 20px;
     text-shadow: 1px 1px 1px #000;    
 }
+.active {
+    background-color: #272833;
+}
 .nav-item:hover{
     background-color: #272833;
     transition: .5s;
@@ -91,7 +94,7 @@ body {
     text-align: center;
 }
 .dropdown-menu a:hover {
-    background-color: #F9813A;
+    background-color: #CC0000;
     transition: .5s;
 
 }
@@ -334,7 +337,25 @@ body {
     font-size: 18px;
     margin-top: 10px;
 }
-
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: #CC0000;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #000;
+  }
 
 /*****      EXTRA LARGE DEVICE ONLY         *****/
 @media (min-width: 1200px) {
@@ -465,7 +486,7 @@ body {
         right: 0;
         width: 0;
         top: 7vh;
-        background-color: #F9813A;
+        background-color: #CC0000;
         transition: .5s;
         z-index: 1;
         overflow: hidden;
@@ -587,7 +608,7 @@ body {
         right: 0;
         width: 0;
         top: 7vh;
-        background-color: #F9813A;
+        background-color: #CC0000;
         transition: .5s;
         z-index: 1;
         overflow: hidden;
@@ -699,7 +720,7 @@ body {
     }
     /*brand-name*/
     #brand-logo img {
-        width: 70%;
+        width: 90%;
     }
     #brand-logo {
         padding: 10px;
@@ -724,8 +745,8 @@ body {
         position: absolute;
         right: 0;
         width: 0;
-        top: 7vh;
-        background-color: #F9813A;
+        top: 6vh;
+        background-color: #CC0000;
         transition: .5s;
         z-index: 1;
         overflow: hidden;
