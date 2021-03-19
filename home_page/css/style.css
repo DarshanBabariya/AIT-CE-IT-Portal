@@ -127,7 +127,7 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;    
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.5); 
 }
 .carousel-inner .content h1{
     font-size: 5.5em; 

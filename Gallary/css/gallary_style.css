@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #000;
+    background-color: #fff;
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+.heading_style {
+    font-family: 'Vollkorn', serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: #CC0000;
+}
+/*brand-name*/
+.ait-brand {
+    background-color: #272833;
+}
+#brand-logo img {
+    width: 120%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#brand-name a h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #FF0000;
+    color: #FFF;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    text-align: center;
+}
+#brand-name a {
+    text-decoration: none;
+}
+#brand-name h3 {
+    font-size: 18px;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CC0000;
+}
+.navbar-brand {
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #000;
+}
+.navbar-brand h4{
+    font-size: 25px;
+}
+.navbar-nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.main-nav a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000;    
+}
+.active {
+    background-color: #272833;
+}
+.main-nav:hover{
+    background-color: #272833;
+    transition: .5s;
+    border-radius: 2px;
+}
+.dropdown-menu{
+    background-color: #272833;
+    text-align: center;
+}
+.dropdown-menu a:hover {
+    background-color: #CC0000;
+    transition: .5s;
+
+}
+.mob-nav {
+    cursor: pointer;
+    display: none;
+}
+.mob-nav div{
+    width: 25px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 5px;
+}
+
+
+
+/* gallary_nav */
+.nav-tabs {
+    margin-top: 20px;
+}
+#workshop-active {
+    background-color: #f5f5f5c4;
+    color: #495057;
+    border: 1px solid #dee2e6 ;
+}
+.gal-nav {
+    margin: 0 50px;
+}
+.gal-nav a {
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 22px;
+}
+.gal-nav a:hover{
+    color: #272833;
+}
+
+/* workshop, event, club, newsletter */
+#workshop, #event, #club, #newsletter {
+    padding-top: 50px;
+    background-color: #f5f5f5c4;
+    margin-bottom: 50px;
+    border-bottom: 1px solid  #dee2e6;
+}
+.card-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #272833;
+    padding: 25px 10px;
+}
+.card-title {
+    font-size: 25px;
+    font-weight: bold; 
+    color: #CC0000;
+}
+.card-title i, .list-group-item i {
+    color: #CC0000;
+}
+.list-group-item, .card-text {
+    font-size: 18px;
+}
+.newsletter-click a {
+    text-decoration: none;
+    color: #272833;
+    font-size: 22px;
+    text-align: center;
+}
+.newsletter-click a{
+    color: #272833;
+    animation: changecolornew 1s infinite;
+    font-weight: bold;
+    margin-left: 25px;
+}
+@keyframes changecolornew{
+    0%{color: #CC0000;}
+    50%{color: #3294cd}
+    100%{color:#272833;}
+}
+
+#workshop {
+    display: block;
+}
+#event {
+    display: none;
+}
+#club {
+    display: none;
+}
+#newsletter {
+    display: none;
+}
+
+
+
+/* footer */
+.panel-footer {
+    background-color: #272833;
+    color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#footer-head {
+    font-size: 20px;
+}
+#footer-tile {
+    margin-top: 10px;
+    font-size: 18px;
+    list-style: none;
+    color: #ffffffd5;
+}
+#footer-tile a {
+    font-size: 18px;
+    color: #ffffffd5;
+}
+#footer-tile a:hover{
+    text-decoration: none;
+}
+#footer-tile a span {
+    padding-left: 10px;
+}
+.copyright {
+    font-size: 18px;
+    margin-top: 10px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: #CC0000;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #000;
+  }
+
+
+
+/*****      EXTRA LARGE DEVICE ONLY         *****/
+@media (min-width: 1200px) {
+    
+}
+
+/*****      LARGE DEVICE ONLY           *****/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .heading_style {
+        font-size: 1.6em;
+        margin-bottom: 50px;
+    }
+    /*brand-name*/
+    #brand-logo img {
+        width: 60%;
+    }
+    #brand-name a h1{
+        font-size: 1.5em;
+    }
+    #brand-name h3 {
+        font-size: 15px;
+    }
+    
+    /* navbar */
+    .navbar-brand h4{
+        font-size: 22px;
+    }
+    .main-nav a{
+        font-size: 19px;
+    }
+    
+    /* workshop */
+    .workshop,#event, #club {
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
+    .card-tile {
+        padding: 25px 10px;
+    }
+    .card-title {
+        font-size: 22px;
+    }
+    .list-group-item, .card-text {
+        font-size: 18px;
+    }
+
+    /* gallary_nav */
+    .nav-tabs {
+        margin-top: 20px;
+    }
+    .gal-nav {
+        margin: 0 30px;
+    }
+    .gal-nav a {
+        font-size: 22px;
+    }
+
+    /* footer */
+    #footer-head {
+        font-size: 18px;
+    }
+    #footer-tile {
+        font-size: 16px;
+    }
+    #footer-tile a {
+        font-size: 16px;
+    }
+    .copyright {
+        font-size: 16px;
+    }
+    
+    
+    
+}
+
+/*****      MEDIUM DEVICE ONLY          *****/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .heading_style {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+    /*brand-name*/
+    #brand-logo img {
+        width: 80%;
+    }
+    #brand-name a h1{
+        font-size: 1.15em;
+        letter-spacing: .5px;
+    }
+    #brand-name h3 {
+        font-size: 12px;
+    }
+    /* navbar */
+    .navbar-brand h4{
+        font-size: 20px;
+    }
+    .navbar-nav {
+        position: absolute;
+        right: 0;
+        width: 0;
+        top: 7vh;
+        background-color: #CC0000;
+        transition: .5s;
+        z-index: 1;
+        overflow: hidden;
+        /* transform: translateX(100%); */
+    }
+    .navbar-nav li{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;       
+    }
+    .mob-nav {
+        display: block;
+    }
+
+    /* gallary_nav */
+    .nav-tabs {
+        margin-top: 20px;
+    }
+    .gal-nav {
+        margin: 0 10px;
+    }
+    .gal-nav a {
+        font-size: 20px;
+    }
+
+    /* workshop */
+    .workshop,#event, #club {
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
+    .card-tile {
+        padding: 25px 10px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .list-group-item, .card-text {
+        font-size: 16px;
+    }
+    
+    /* footer */
+    #footer-head {
+        font-size: 16px;
+    }
+    #footer-tile {
+        font-size: 14px;
+    }
+    #footer-tile a {
+        font-size: 14px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+
+    
+    
+}
+/*****      SMALL DEVICE ONLY       *****/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .heading_style {
+        font-size: 1.4em;
+        margin-bottom: 50px;
+    }
+    /*brand-name*/
+    #brand-logo img {
+        width: 90%;
+    }
+    #brand-name a h1{
+        font-size: .85em;
+        letter-spacing: .5px;
+        padding-top: 15px;
+    }
+    #brand-name h3 {
+        font-size: 10px;
+    }
+    /* navbar */
+    .navbar-brand h4{
+        font-size: 20px;
+    }
+    .navbar-nav {
+        position: absolute;
+        right: 0;
+        width: 0;
+        top: 7vh;
+        background-color: #CC0000;
+        transition: .5s;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .navbar-nav li{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;       
+    }
+    .mob-nav {
+        display: block;
+    }
+
+    /* gallary_nav */
+    .nav-tabs {
+        margin-top: 20px;
+    }
+    .gal-nav {
+        margin: 0 10px;
+    }
+    .gal-nav a {
+        font-size: 18px;
+    }
+
+    /* workshop */
+    .workshop, #event, #club {
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
+    .card-tile {
+        padding: 25px 10px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .list-group-item, .card-text {
+        font-size: 16px;
+    }
+    
+    /* footer */
+    .panel-footer {
+        text-align: justify;
+    }
+    #footer-head {
+        font-size: 18px;
+    }
+    #footer-tile {
+        font-size: 16px;
+    }
+    #footer-tile a {
+        font-size: 16px;
+    }
+    .copyright {
+        font-size: 16px;
+    }
+    .about-footer, .link-footer, .reach-footer {
+        margin-top: 10px;
+    }
+}
+
+/*****      EXTRA SUPER SMALL DEVICE ONLY       *****/
+@media (max-width: 575.98px) {
+    .heading_style {
+        font-size: 1.3em;
+        margin-bottom: 50px;
+    }
+    /*brand-name*/
+    #brand-logo img {
+        width: 90%;
+    }
+    #brand-logo {
+        padding: 10px;
+        
+    }
+    #brand-name a h1{
+        font-size: .7em;
+        letter-spacing: 1px;
+        padding-top: 20px;
+    }
+    #brand-name h3 {
+        font-size: 6px;
+    }
+    #brand-name {
+        padding: 2px;
+    }
+    /* navbar */
+    .navbar-brand h4{
+        font-size: 16px;
+    }
+    .navbar-nav {
+        position: absolute;
+        right: 0;
+        width: 0;
+        top: 6vh;
+        background-color: #CC0000;
+        transition: .5s;
+        z-index: 1;
+        overflow: hidden;
+        /* transform: translateX(100%); */
+    }
+    .navbar-nav li{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;       
+    }
+    .mob-nav {
+        display: block;
+    }
+
+    /* gallary_nav */
+    .nav-tabs {
+        margin-top: 20px;
+    }
+    .gal-active {
+        border-bottom-color: #dee2e6 !important;
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+    }
+    .gal-nav {
+        margin: 0 0px;
+    }
+    .gal-nav a {
+        font-size: 18px;
+    }
+
+    /* workshop */
+    .workshop, #event, #club {
+        padding-top: 30px;
+        margin-bottom: 50px;
+    }
+    .card-tile {
+        padding: 25px 10px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .list-group-item, .card-text {
+        font-size: 16px;
+    }
+    
+    /* footer */
+    .panel-footer {
+        text-align: justify;
+    }
+    #footer-head {
+        font-size: 18px;
+    }
+    #footer-tile {
+        font-size: 16px;
+    }
+    #footer-tile a {
+        font-size: 16px;
+    }
+    .copyright {
+        font-size: 16px;
+    }
+    .about-footer, .link-footer, .reach-footer {
+        margin-top: 10px;
+    }
+
+}

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contect.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- fevicon -->
+    <link rel="icon" href="../images/logo/logo.png" sizes="16x16">
+
+    <title>AIT | CE & IT PORTAL | Contect</title>
+  </head>
+  <body>
+    <!-- brand-name -->
+    <div class="ait-brand container-fluid">
+      <div class="row">
+          <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 col-2" id="brand-logo">
+              <a href="index.html">
+                  <img src="../images/logo/logo.png" alt="AIT logo" title="AIT">
+              </a>
+          </div>
+          <div class="col-xl-11 col-lg-10 col-md-10 col-sm-10 col-10" id="brand-name">
+            <a href="index.html" title="AIT">
+                <h1> AIT CE & IT DEPARTMENT </h1> 
+            </a>
+            <h3>- Everything You Need For Your Dreams</h3>
+          </div>
+      </div>
+  </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="navbar-brand">
+        <h4>CE & IT Department Portal</h4>
+      </div>
+      <ul class="navbar-nav" id="mob-navbar">
+        <li class="nav-item">
+          <a class="nav-link" href="../home_page/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Semester
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+            <a class="dropdown-item" href="#">4</a>
+            <a class="dropdown-item" href="#">5</a>
+            <a class="dropdown-item" href="#">6</a>
+            <a class="dropdown-item" href="#">7</a>
+            <a class="dropdown-item" href="#">8</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Faculty</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Gallary/gallary.html">Galary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contect.html">Contact US</a>
+        </li>
+      </ul>
+      <div class="mob-nav" onclick="openNav()" id="dash">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- contect_us -->
+
+    <div class="container-fluid " id="contect">
+        <div class="header text-center" id="contect-head">
+          <h3 class="heading_style"> Contact Us</h3>
+        </div>
+    
+        <div class="contactdata row d-flex mt-5 ">
+          <div class="contact col-lg-6 col-12 p-2">
+            <form action="contact_add.php" id="CONTACT" method="POST" name="contact"
+              onsubmit="return(myvalidationcontact());">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text mw-100" id="basic-addon1"><i class="fa fa-user"></i></span>
+                </div>
+                <input type="text" name="name" autocomplete="off" class="form-control" placeholder="Name"
+                  aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text mw-100" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
+                </div>
+                <input type="email" name="email" autocomplete="off" class="form-control" placeholder="Email"
+                  aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+    
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text mw-100" id="basic-addon1"><i class="fa fa-comments"></i></span>
+                </div>
+                <input type="text" class="form-control" autocomplete="off" name="subject"
+                  placeholder="Enter A Query Subject" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="" cols="30" rows="7" autocomplete="off" class="form-control"
+                  placeholder="Query Message"></textarea>
+              </div>
+              <center>
+                <div class="wrap-input100 validate-input pb-2" data-validate="Enter password">
+                  <div class="g-recaptcha" data-sitekey="6LfE5r8ZAAAAAGiQJ0ViTDgFh0D2igK2Cfr5SRDq"
+                    data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback">
+                    <div style="width: 304px; height: 78px;">
+                      <div><iframe
+                          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfE5r8ZAAAAAGiQJ0ViTDgFh0D2igK2Cfr5SRDq&amp;co=aHR0cDovL3d3dy5haXRpbmRpYS5pbjo4MA..&amp;hl=en&amp;v=a7xT2d71Jli62wQMfeUUrLcO&amp;size=normal&amp;cb=8qi02s5pyg6e"
+                          width="304" height="78" role="presentation" name="a-a6rm47m1uixa" frameborder="0" scrolling="no"
+                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                      </div><textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response"
+                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                    </div>
+                  </div>
+                  <input class="form-control d-none" data-recaptcha="true" required=""
+                    data-error="Please complete the Captcha">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </center>
+              <div class="form-group">
+                <center><input type="submit" value="Send Message" style="background-color:#FF0000; border-radius: 30px; color: white; font-weight: 12px;" class="btn py-3 px-5"></center>
+              </div>
+            </form>
+          </div>
+          <script>
+            $(document).ready(function () {
+              console.log("hello");
+            });
+          </script>
+    
+          <div class="mapouter col-lg-6 col-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.617405654074!2d72.51905911504834!3d23.111097384908362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e82d324d1558f%3A0x359cebcfc4ad365e!2sAhmedabad%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1616116937644!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+    
+        </div>
+      </div>
+
+  <!-- footer -->
+  <footer class="panel-footer"> 
+    <div class="container">
+      <div class="row">
+        <section class="about-footer col-md-4">
+          <span id="footer-head">About</span>
+            <p id="footer-tile">This is the institute that helps the students to enhance their skills by theoretical 
+              knowledge as well as practical knowledge.
+            </p>
+            <p id="footer-tile">The infrastructure combined with the lush green surrounding of the AIT campus are amongst the best facilities resulting into a peaceful atmosphere 
+              for the students to improve their focus on the learning.
+            </p>
+        </section>
+        <section class="link-footer col-md-4">
+          <span id="footer-head">Usefull Links</span>
+            <ul>
+              <li id="footer-tile">
+                <a href="http://www.aitindia.in/" target="_blank">
+                 <i class="fa fa-check-circle"></i><span>AIT Collage Website</span>
+                </a>
+              </li>
+              <li id="footer-tile">
+                <a href="#">
+                  <i class="fa fa-check-circle"></i><span>News-latters</span>
+                </a>
+              </li>
+              <li id="footer-tile">
+                <a href="#">
+                  <i class="fa fa-check-circle"></i><span>Clubs</span>
+                </a>
+              </li>
+            </ul>
+        </section>
+        <section class="reach-footer col-md-4">
+          <span id="footer-head">Reach Us</span>
+          <ul>
+            <li id="footer-tile">
+              <a href="tel:+91 02717241132">
+                <i class="fa fa-phone"></i><span>+91 02717241132 (For Inquiry)</span>
+              </a>
+            </li>
+            <li id="footer-tile">
+              <a href="tel:+91 02717241133">
+                <i class="fa fa-phone"></i><span>+91 02717241133 (For Inquiry)</span>
+              </a>
+            </li>
+            <li id="footer-tile">
+              <a href="mailto:info@aitindia.in">
+                <i class="fa fa-envelope"></i><span>info@aitindia.in</span>
+              </a>
+            </li>
+            <li id="footer-tile">
+              <a href="https://goo.gl/maps/QCKpoeuKvAvvpZMXA" target="_blank">
+                <i class="fa fa-map-marker"></i><span>Nr. Vasantnagar Township, Gota-Ognaj Road, Ahmedabad, GUJARAT- 382470</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="copyright text-center">
+        <p> &copy; Copyright 2021 All rights reserved with by Ahmedabad Institute of Technology</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- back-to-top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+ 
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="../home_page/js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
