@@ -142,9 +142,9 @@ body {
 .card-tile {
     display: flex;
     justify-content: center;
-    align-items: center;
     color: #272833;
     padding: 25px 10px;
+    margin-top: 0;
 }
 .card-title {
     font-size: 25px;
