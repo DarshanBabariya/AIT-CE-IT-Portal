@@ -13,12 +13,18 @@ body {
 
 .heading_style {
     font-family: 'Vollkorn', serif;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 600;
-    text-transform: uppercase;
     padding-top: 50px;
-    margin-bottom: 50px;
-    color: #CC0000;
+    color: #272833;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#hr-title {
+    width: 25%;
+    border: 2px solid #CC0000;
+    background-color: #CC0000;
+    margin-bottom: 30px;
 }
 /*brand-name*/
 .ait-brand {
@@ -81,8 +87,11 @@ body {
     font-size: 20px;
     text-shadow: 1px 1px 1px #000;    
 }
-.active {
+.active-main {
     background-color: #272833;
+}
+.active1 {
+    background-color: #CC0000;
 }
 .main-nav:hover{
     background-color: #272833;
@@ -111,14 +120,10 @@ body {
 
 
 
+
 /* gallary_nav */
-.nav-tabs {
+.nav-tabs{
     margin-top: 20px;
-}
-#workshop-active {
-    background-color: #f5f5f5c4;
-    color: #495057;
-    border: 1px solid #dee2e6 ;
 }
 .gal-nav {
     margin: 0 50px;
@@ -130,66 +135,68 @@ body {
 }
 .gal-nav a:hover{
     color: #272833;
-}
-
-/* workshop, event, club, newsletter */
-#workshop, #event, #club, #newsletter {
-    padding-top: 50px;
     background-color: #f5f5f5c4;
-    margin-bottom: 50px;
-    border-bottom: 1px solid  #dee2e6;
+    border: 2px solid #dee2e6;
+    transition: .8s;
 }
-.card-tile {
-    display: flex;
-    justify-content: center;
-    color: #272833;
-    padding: 25px 10px;
-    margin-top: 0;
-}
-.card-title {
-    font-size: 25px;
-    font-weight: bold; 
-    color: #CC0000;
-}
-.card-title i, .list-group-item i {
-    color: #CC0000;
-}
-.list-group-item, .card-text {
-    font-size: 18px;
-}
-.newsletter-click a {
-    text-decoration: none;
-    color: #272833;
-    font-size: 22px;
-    text-align: center;
-}
-.newsletter-click a{
-    color: #272833;
-    animation: changecolornew 1s infinite;
-    font-weight: bold;
-    margin-left: 25px;
-}
-@keyframes changecolornew{
-    0%{color: #CC0000;}
-    50%{color: #3294cd}
-    100%{color:#272833;}
+.active {
+    background-color: #f5f5f5c4 !important;
 }
 
-#workshop {
-    display: block;
+/* Subjects */
+#subject {
+    background-color: #f5f5f5c4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
 }
-#event {
-    display: none;
+.sub_content{
+    border: 3px solid #000;
+    overflow: auto;
+    width: 90%;
+    padding: 2px;
 }
-#club {
-    display: none;
+.sub_content::-webkit-scrollbar {
+    width: 15px;
+  }
+.sub_content::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+.sub_content::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right,#CC0000, #FFD5CD, #CC0000);
+    border: 2px solid #CC0000;
 }
-#newsletter {
-    display: none;
+.sub_table {
+    width: 100%; 
 }
-.br-gal-manu {
-    display: none;
+.sub_table tr th{
+    border: 2px solid #000;
+    text-align: center;
+    padding: 5px 30px;
+    background-color: #272833;
+    color: #FFF;
+    font-size: 21px;
 }
+.sub_table tr td {
+    border: 2px solid #000;
+    text-align: center;
+    padding: 10px 30px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 20px;
+}
+.sub_table tr td a{
+    color: #000;
+}
+.sub_table tr td a:hover{
+    text-decoration: none;
+    color: #CC0000;
+    font-weight: bold;
+}
+
+
+
 
 /* footer */
 .panel-footer {
@@ -272,21 +279,6 @@ body {
     .main-nav a{
         font-size: 19px;
     }
-    
-    /* workshop */
-    .workshop,#event, #club {
-        padding-top: 30px;
-        margin-bottom: 50px;
-    }
-    .card-tile {
-        padding: 25px 10px;
-    }
-    .card-title {
-        font-size: 22px;
-    }
-    .list-group-item, .card-text {
-        font-size: 18px;
-    }
 
     /* gallary_nav */
     .nav-tabs {
@@ -297,6 +289,17 @@ body {
     }
     .gal-nav a {
         font-size: 22px;
+    }
+
+    /* Subjects */ 
+    .sub_content{
+        width: 90%;
+    }
+    .sub_table tr th{
+        font-size: 21px;
+    }
+    .sub_table tr td {
+        font-size: 20px;
     }
 
     /* footer */
@@ -369,20 +372,17 @@ body {
         font-size: 20px;
     }
 
-    /* workshop */
-    .workshop,#event, #club {
-        padding-top: 30px;
-        margin-bottom: 50px;
+    /* Subjects */
+    .sub_content{
+        width: 90%;
     }
-    .card-tile {
-        padding: 25px 10px;
-    }
-    .card-title {
+    .sub_table tr th{
         font-size: 20px;
     }
-    .list-group-item, .card-text {
-        font-size: 16px;
+    .sub_table tr td {
+        font-size: 18px;
     }
+
     
     /* footer */
     #footer-head {
@@ -453,19 +453,15 @@ body {
         font-size: 18px;
     }
 
-    /* workshop */
-    .workshop, #event, #club {
-        padding-top: 30px;
-        margin-bottom: 50px;
+    /* Subjects */ 
+    .sub_content{
+        width: 90%;
     }
-    .card-tile {
-        padding: 25px 10px;
-    }
-    .card-title {
-        font-size: 20px;
-    }
-    .list-group-item, .card-text {
+    .sub_table tr th{
         font-size: 16px;
+    }
+    .sub_table tr td {
+        font-size: 15px;
     }
     
     /* footer */
@@ -556,19 +552,16 @@ body {
     .br-gal-manu {
         display: block;
     }
-    /* workshop */
-    .workshop, #event, #club {
-        padding-top: 30px;
-        margin-bottom: 50px;
+    
+    /* Subjects */ 
+    .sub_content{
+        width: 90%;
     }
-    .card-tile {
-        padding: 25px 10px;
+    .sub_table tr th{
+        font-size: 14px;
     }
-    .card-title {
-        font-size: 20px;
-    }
-    .list-group-item, .card-text {
-        font-size: 16px;
+    .sub_table tr td {
+        font-size: 14px;
     }
     
     /* footer */

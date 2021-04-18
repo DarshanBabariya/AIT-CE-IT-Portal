@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/semester.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- fevicon -->
+    <link rel="icon" href="../../images/logo/logo.png" sizes="16x16">
+
+    <title>AIT | CE & IT PORTAL | SEMESTER 1</title>
+  </head>
+  <body>
+    <!-- brand-name -->
+    <div class="ait-brand container-fluid">
+      <div class="row">
+          <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 col-2" id="brand-logo">
+              <a href="../../home_page/index.html">
+                  <img src="../../images/logo/logo.png" alt="AIT logo" title="AIT">
+              </a>
+          </div>
+          <div class="col-xl-11 col-lg-10 col-md-10 col-sm-10 col-10" id="brand-name">
+              <a href="../../home_page/index.html" title="AIT">
+                  <h1> AIT CE & IT DEPARTMENT </h1> 
+              </a>
+              <h3>- Everything You Need For Your Dreams</h3>
+          </div>
+      </div>
+  </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="navbar-brand">
+        <h4>CE & IT Department Portal</h4>
+      </div>
+      <ul class="navbar-nav" id="mob-navbar">
+        <li class="nav-item main-nav">
+          <a class="nav-link" href="../../home_page/index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item main-nav dropdown">
+          <a class="nav-link dropdown-toggle active-main" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Semester
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item active1" href="sem1.html">1</a>
+            <a class="dropdown-item" href="#">2</a>
+            <a class="dropdown-item" href="#">3</a>
+            <a class="dropdown-item" href="#">4</a>
+            <a class="dropdown-item" href="#">5</a>
+            <a class="dropdown-item" href="#">6</a>
+            <a class="dropdown-item" href="#">7</a>
+            <a class="dropdown-item" href="#">8</a>
+          </div>
+        </li>
+        <li class="nav-item main-nav">
+          <a class="nav-link" href="#">Faculty</a>
+        </li>
+        <li class="nav-item main-nav">
+          <a class="nav-link" href="../../Gallary/gallary.html">Gallery</a>
+        </li>
+        <li class="nav-item main-nav">
+          <a class="nav-link" href="../../Contect Us/contect.html">Contact Us</a>
+        </li>
+      </ul>
+      <div class="mob-nav" onclick="openNav()" id="dash">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" id="sem-title">
+        <div class="header text-center">
+              <h3 class="heading_style"> 1<sup style="text-transform: lowercase;">st</sup> Semester</h3>
+              <hr class="mx-auto" id="hr-title">
+        </div>
+    </div>
+    
+    <!-- gallary_nav -->
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item gal-nav">
+          <a class="nav-link active" id="subject-tab" data-toggle="tab" href="#subject" role="tab" aria-controls="home" aria-selected="true">
+            Subject
+          </a>
+        </li>
+        <li class="nav-item gal-nav">
+          <a class="nav-link" id="timetable-tab" data-toggle="tab" href="#timetable" role="tab" aria-controls="profile" aria-selected="false">
+            Timetable
+          </a>
+        </li>
+        <li class="nav-item gal-nav">
+          <a class="nav-link" id="mse-tab" data-toggle="tab" href="#mse" role="tab" aria-controls="contact" aria-selected="false">
+            MSE
+          </a>
+        </li>
+        <li class="nav-item gal-nav">
+          <a class="nav-link" id="attendance-tab" data-toggle="tab" href="#attendance" role="tab" aria-controls="contact" aria-selected="false">
+            Attendance
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="subject" role="tabpanel" aria-labelledby="subject-tab">
+          <div class="sub_content mx-auto " >
+          <table class="sub_table ">
+            <tbody>
+              <tr>
+                <th rowspan="2">Branch</th>
+                <th rowspan="2">GTU Code</th>
+                <th rowspan="2">Subject Name</th>
+                <th rowspan="2">Credit</th>
+                <th colspan="3">Marks</th>
+              </tr>
+              <tr>
+                <th>Theory</th>
+                <th>Practical</th>
+                <th>Total</th>
+              </tr>
+              <tr>
+                  <td rowspan="4" style="color: #CC0000;">All</td>
+                  <td>3110014</td>
+                  <td>
+                    <a href="#"> Mathematics-I </a>
+                  </td>
+                  <td>5</td>
+                  <td>100</td>
+                  <td>50</td>
+                  <td>150</td>
+              </tr>
+              <tr>
+                <td>3110005</td>
+                <td>
+                  <a href="#"> Basic Electrical Engineering </a>
+                </td>
+                <td>4</td>
+                <td>100</td>
+                <td>50</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>3110006</td>
+                <td>
+                  <a href="#"> Basic Mechanical Engineering </a>
+                </td>
+                <td>5</td>
+                <td>100</td>
+                <td>50</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>3110007</td>
+                <td>
+                  <a href="#"> Enviornmental Science </a>
+                </td>
+                <td>0</td>
+                <td>100</td>
+                <td>00</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td style="color: #CC0000;">Mech & Auto & Civil</td>
+                <td>3110003</td>
+                <td>
+                  <a href="#"> Programming for Problem Solving </a>
+                </td>
+                <td>4</td>
+                <td>100</td>
+                <td>50</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td style="color: #CC0000;">CE & IT & EC & Electrical</td>
+                <td>3110011</td>
+                <td> 
+                  <a href="#"> Physics </a>
+                </td>
+                <td>4</td>
+                <td>100</td>
+                <td>50</td>
+                <td>150</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          </div>
+        <div class="tab-pane fade" id="timetable" role="tabpanel" aria-labelledby="timetable-tab">
+          ulla est ullamco ut irure incididunt nulla Lorem Lorem minim irure officia enim reprehender
+          it. Magna duis labore cillum sint adipisicing exercitation ipsum. Nostrud ut anim non exerci
+          tation velit laboris fugiat cupidatat. Commodo esse dolore fugiat sint velit ullamco magn
+          a consequat voluptate minim amet aliquip ipsum aute laboris nisi. Labore labore veniam iru
+          re irure ipsum pariatur mollit magna in cupidatat dolore magna irure esse tempor ad mollit.
+           Dolore commodo nulla minim amet ipsum officia consectetur amet ullamco voluptate nisi comm
+           odo ea sit eu.
+          </div>
+        <div class="tab-pane fade" id="mse" role="tabpanel" aria-labelledby="mse-tab">
+          int sit mollit irure quis est nostrud cillum consequat Lorem esse do quis dolor esse fu
+          giat sunt do. Eu ex commodo veniam Lorem aliquip laborum occaecat qui Lorem esse mollit dolo
+          re anim cupidatat. Deserunt officia id Lorem nostrud aute id commodo elit eiusmod enim irure am
+          et eiusmod qui reprehenderit nostrud tempor. Fugiat ipsum excepteur in aliqua non et quis aliqu
+          ip ad irure in labore cillum elit enim. Consequat aliquip incididunt ipsum et minim laborum lab
+          orum laborum et cillum labore. Deserunt adipisicing cillum id nulla minim nostrud labore eiusmo
+          d et amet. Laboris consequat conseq
+        </div>
+        <div class="tab-pane fade" id="attendance" role="tabpanel" aria-labelledby="attendance-tab">
+          int sit mollit irure quis est nostrud cillum consequat Lorem esse do quis dolor esse fugiat 
+          sunt do. Eu ex commodo veniam Lorem aliquip laborum occaecat qui Lorem esse mollit dolore anim
+           cupidatat. Deserunt officia id Lorem nostrud aute id commodo elit eiusmod enim irure amet eiu
+           smod qui reprehenderit nostrud tempor. Fugiat ipsum excepteur in aliqua non et quis aliquip ad
+            irure in labore cillum elit enim. Consequat aliquip incididunt ipsum et minim laborum laborum 
+            laborum et cillum labore. Deserunt adipisicing cillum id nulla minim nostrud labore eiusmod 
+            et amet. Laboris consequat conseq
+          </div>
+      </div>
+
+     
+
+    <!-- footer -->
+    <footer class="panel-footer"> 
+        <div class="container">
+        <div class="row">
+            <section class="about-footer col-md-4">
+            <span id="footer-head">About</span>
+                <p id="footer-tile">This is the institute that helps the students to enhance their skills by theoretical 
+                knowledge as well as practical knowledge.
+                </p>
+                <p id="footer-tile">The infrastructure combined with the lush green surrounding of the AIT campus are amongst the best facilities resulting into a peaceful atmosphere 
+                for the students to improve their focus on the learning.
+                </p>
+            </section>
+            <section class="link-footer col-md-4">
+            <span id="footer-head">Useful Links</span>
+                <ul>
+                <li id="footer-tile">
+                    <a href="http://www.aitindia.in/" target="_blank">
+                    <i class="fa fa-check-circle"></i><span>AIT College Website</span>
+                    </a>
+                </li>
+                <li id="footer-tile">
+                    <a href="#">
+                    <i class="fa fa-check-circle"></i><span>News-letters</span>
+                    </a>
+                </li> 
+                <li id="footer-tile">
+                    <a href="#">
+                    <i class="fa fa-check-circle"></i><span>Clubs</span>
+                    </a>
+                </li>
+                </ul>
+            </section>
+            <section class="reach-footer col-md-4">
+            <span id="footer-head">Reach Us</span>
+            <ul>
+                <li id="footer-tile">
+                <a href="tel:+91 02717241132">
+                    <i class="fa fa-phone"></i><span>+91 02717241132 (For Inquiry)</span>
+                </a>
+                </li>
+                <li id="footer-tile">
+                <a href="tel:+91 02717241133">
+                    <i class="fa fa-phone"></i><span>+91 02717241133 (For Inquiry)</span>
+                </a>
+                </li>
+                <li id="footer-tile">
+                <a href="mailto:info@aitindia.in">
+                    <i class="fa fa-envelope"></i><span>info@aitindia.in</span>
+                </a>
+                </li>
+                <li id="footer-tile">
+                <a href="https://goo.gl/maps/QCKpoeuKvAvvpZMXA" target="_blank">
+                    <i class="fa fa-map-marker"></i><span>Nr. Vasantnagar Township, Gota-Ognaj Road, Ahmedabad, GUJARAT- 382470</span>
+                </a>
+                </li>
+            </ul>
+            </section>
+        </div>
+        <div class="copyright text-center">
+            <p> &copy; Copyright 2021 All rights reserved with by Ahmedabad Institute of Technology</p>
+        </div>
+        </div>
+    </footer>
+
+  <!-- back-to-top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+ 
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="../../home_page/js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

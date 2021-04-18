@@ -17,8 +17,13 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     padding-top: 50px;
-    margin-bottom: 50px;
-    color: #CC0000;
+    color: #272833;
+}
+#hr-title {
+    width: 25%;
+    border: 2px solid #CC0000;
+    background-color: #CC0000;
+    margin-bottom: 30px;
 }
 /*brand-name*/
 .ait-brand {
@@ -36,7 +41,7 @@ body {
     text-transform: uppercase;
     text-shadow: 2px 2px 2px #FF0000;
     color: #FFF;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     padding-top: 30px;
     text-align: center;
 }
@@ -74,7 +79,7 @@ body {
     width: 60%;
     justify-content: space-around;
 }
-.main-nav a{
+.nav-item a{
     color: #FFF;
     text-decoration: none;
     font-weight: 500;
@@ -84,7 +89,7 @@ body {
 .active {
     background-color: #272833;
 }
-.main-nav:hover{
+.nav-item:hover{
     background-color: #272833;
     transition: .5s;
     border-radius: 2px;
@@ -107,88 +112,6 @@ body {
     height: 3px;
     background-color: #FFF;
     margin: 5px;
-}
-
-
-
-/* gallary_nav */
-.nav-tabs {
-    margin-top: 20px;
-}
-#workshop-active {
-    background-color: #f5f5f5c4;
-    color: #495057;
-    border: 1px solid #dee2e6 ;
-}
-.gal-nav {
-    margin: 0 50px;
-}
-.gal-nav a {
-    color: #CC0000;
-    font-weight: bold;
-    font-size: 22px;
-}
-.gal-nav a:hover{
-    color: #272833;
-}
-
-/* workshop, event, club, newsletter */
-#workshop, #event, #club, #newsletter {
-    padding-top: 50px;
-    background-color: #f5f5f5c4;
-    margin-bottom: 50px;
-    border-bottom: 1px solid  #dee2e6;
-}
-.card-tile {
-    display: flex;
-    justify-content: center;
-    color: #272833;
-    padding: 25px 10px;
-    margin-top: 0;
-}
-.card-title {
-    font-size: 25px;
-    font-weight: bold; 
-    color: #CC0000;
-}
-.card-title i, .list-group-item i {
-    color: #CC0000;
-}
-.list-group-item, .card-text {
-    font-size: 18px;
-}
-.newsletter-click a {
-    text-decoration: none;
-    color: #272833;
-    font-size: 22px;
-    text-align: center;
-}
-.newsletter-click a{
-    color: #272833;
-    animation: changecolornew 1s infinite;
-    font-weight: bold;
-    margin-left: 25px;
-}
-@keyframes changecolornew{
-    0%{color: #CC0000;}
-    50%{color: #3294cd}
-    100%{color:#272833;}
-}
-
-#workshop {
-    display: block;
-}
-#event {
-    display: none;
-}
-#club {
-    display: none;
-}
-#newsletter {
-    display: none;
-}
-.br-gal-manu {
-    display: none;
 }
 
 /* footer */
@@ -237,11 +160,52 @@ body {
     border-radius: 10px;
   }
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #000;
-  }
+}
 
+/* faculty */
+.faculty {
+    padding: 20px;
+}
+.faculty-main{
+    background-color: #f5f5f5c4;
+}
+.faculty_content {
+    border: 2px solid #dee2e6;
+    background-color: #FFF;  
+    margin: 10px;
+}
 
+.fac-img img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.fac-img h4 {
+   text-align: center;
+   margin-bottom: 10px;
+   font-size: 22px;
+   font-weight: bold;
+   color: #CC0000;
+   border: 2px solid #dee2e6;
+   padding: 5px;
+
+}
+.fac-detail ul {
+    text-align: left;
+    margin: 30px;
+    list-style: none;
+}
+.fac-detail ul li span{
+    font-weight: bold;
+}
+.fac-detail ul li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #272833;
+}
 
 /*****      EXTRA LARGE DEVICE ONLY         *****/
 @media (min-width: 1200px) {
@@ -252,7 +216,6 @@ body {
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .heading_style {
         font-size: 1.6em;
-        margin-bottom: 50px;
     }
     /*brand-name*/
     #brand-logo img {
@@ -269,36 +232,18 @@ body {
     .navbar-brand h4{
         font-size: 22px;
     }
-    .main-nav a{
+    .nav-item a{
         font-size: 19px;
     }
-    
-    /* workshop */
-    .workshop,#event, #club {
-        padding-top: 30px;
-        margin-bottom: 50px;
+
+    /* faculty */
+    .fac-img h4 {
+    font-size: 18px; 
     }
-    .card-tile {
-        padding: 25px 10px;
-    }
-    .card-title {
-        font-size: 22px;
-    }
-    .list-group-item, .card-text {
+    .fac-detail ul li {
         font-size: 18px;
     }
-
-    /* gallary_nav */
-    .nav-tabs {
-        margin-top: 20px;
-    }
-    .gal-nav {
-        margin: 0 30px;
-    }
-    .gal-nav a {
-        font-size: 22px;
-    }
-
+   
     /* footer */
     #footer-head {
         font-size: 18px;
@@ -312,8 +257,7 @@ body {
     .copyright {
         font-size: 16px;
     }
-    
-    
+
     
 }
 
@@ -321,7 +265,6 @@ body {
 @media (min-width: 768px) and (max-width: 991.98px) {
     .heading_style {
         font-size: 1.6em;
-        margin-bottom: 20px;
     }
     /*brand-name*/
     #brand-logo img {
@@ -358,30 +301,12 @@ body {
         display: block;
     }
 
-    /* gallary_nav */
-    .nav-tabs {
-        margin-top: 20px;
+     /* faculty */
+    .fac-img h4 {
+        font-size: 18px; 
     }
-    .gal-nav {
-        margin: 0 10px;
-    }
-    .gal-nav a {
-        font-size: 20px;
-    }
-
-    /* workshop */
-    .workshop,#event, #club {
-        padding-top: 30px;
-        margin-bottom: 50px;
-    }
-    .card-tile {
-        padding: 25px 10px;
-    }
-    .card-title {
-        font-size: 20px;
-    }
-    .list-group-item, .card-text {
-        font-size: 16px;
+    .fac-detail ul li {
+        font-size: 18px;
     }
     
     /* footer */
@@ -397,15 +322,13 @@ body {
     .copyright {
         font-size: 14px;
     }
+    
 
-    
-    
 }
 /*****      SMALL DEVICE ONLY       *****/
 @media (min-width: 576px) and (max-width: 767.98px) {
     .heading_style {
         font-size: 1.4em;
-        margin-bottom: 50px;
     }
     /*brand-name*/
     #brand-logo img {
@@ -442,30 +365,12 @@ body {
         display: block;
     }
 
-    /* gallary_nav */
-    .nav-tabs {
-        margin-top: 20px;
+     /* faculty */
+     .fac-img h4 {
+        font-size: 18px; 
     }
-    .gal-nav {
-        margin: 0 10px;
-    }
-    .gal-nav a {
+    .fac-detail ul li {
         font-size: 18px;
-    }
-
-    /* workshop */
-    .workshop, #event, #club {
-        padding-top: 30px;
-        margin-bottom: 50px;
-    }
-    .card-tile {
-        padding: 25px 10px;
-    }
-    .card-title {
-        font-size: 20px;
-    }
-    .list-group-item, .card-text {
-        font-size: 16px;
     }
     
     /* footer */
@@ -493,7 +398,6 @@ body {
 @media (max-width: 575.98px) {
     .heading_style {
         font-size: 1.3em;
-        margin-bottom: 50px;
     }
     /*brand-name*/
     #brand-logo img {
@@ -538,36 +442,11 @@ body {
         display: block;
     }
 
-    /* gallary_nav */
-    .nav-tabs {
-        margin-top: 20px;
+    /* faculty */
+    .fac-img h4 {
+        font-size: 18px; 
     }
-    .gal-active {
-        border-bottom-color: #dee2e6 !important;
-        border-bottom-left-radius: .25rem;
-        border-bottom-right-radius: .25rem;
-    }
-    .gal-nav {
-        margin: 0 0px;
-    }
-    .gal-nav a {
-        font-size: 14px;
-    }
-    .br-gal-manu {
-        display: block;
-    }
-    /* workshop */
-    .workshop, #event, #club {
-        padding-top: 30px;
-        margin-bottom: 50px;
-    }
-    .card-tile {
-        padding: 25px 10px;
-    }
-    .card-title {
-        font-size: 20px;
-    }
-    .list-group-item, .card-text {
+    .fac-detail ul li {
         font-size: 16px;
     }
     

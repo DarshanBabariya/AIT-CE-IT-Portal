@@ -304,7 +304,6 @@ body {
 .circular-iteam::-webkit-scrollbar-thumb {
     background-image: linear-gradient(#CC0000, #FFD5CD);
     border-radius: 10px;
-
 }
 
 /* footer */
