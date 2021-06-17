@@ -21,7 +21,7 @@ body {
     text-transform: uppercase;
 }
 #hr-title {
-    width: 25%;
+    width: 30%;
     border: 2px solid #CC0000;
     background-color: #CC0000;
     margin-bottom: 30px;
@@ -156,7 +156,17 @@ body {
     border: 3px solid #000;
     overflow: auto;
     width: 90%;
-    padding: 2px;
+    padding: 2px;  
+}
+.sub_row .sub_content {
+    margin-bottom: 50px;
+    width: 100%;
+    
+}
+.sub_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Subjects */
 .sub_content::-webkit-scrollbar {
@@ -170,33 +180,7 @@ body {
     background-image: linear-gradient(to right,#CC0000, #FFD5CD, #CC0000);
     border: 2px solid #CC0000;
 }
-.sub_table {
-    width: 100%; 
-}
-.sub_table tr th{
-    border: 2px solid #000;
-    text-align: center;
-    padding: 5px 30px;
-    background-color: #272833;
-    color: #FFF;
-    font-size: 21px;
-}
-.sub_table tr td {
-    border: 2px solid #000;
-    text-align: center;
-    padding: 10px 30px;
-    background-color: #FFF;
-    color: #000;
-    font-size: 20px;
-}
-.sub_table tr td a{
-    color: #000;
-}
-.sub_table tr td a:hover{
-    text-decoration: none;
-    color: #CC0000;
-    font-weight: bold;
-}
+
 
 
 
